@@ -27,8 +27,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField('date joined', auto_now_add=True)
     is_active = models.BooleanField('active', default=True)
     is_staff = models.BooleanField(default=False)
-    area = models.CharField(max_length=1, choices=AREA_CHOICE)
-    level = models.CharField(max_length=1, choices=LEVEL_CHOICE)
+    area = models.CharField(max_length=30, choices=AREA_CHOICE)
+    level = models.CharField(max_length=30, choices=LEVEL_CHOICE)
 
     objects = CustomUserManager()
 
