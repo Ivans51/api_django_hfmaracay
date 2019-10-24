@@ -1,0 +1,61 @@
+DELETE http://127.0.0.1:8000/api/users/6/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/users/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/users/6/
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/user-delete/5/
+Accept: application/json
+
+####
+
+POST http://127.0.0.1:8000/api/users/
+Content-Type: application/json
+
+{
+  "password": "123456",
+  "last_login": null,
+  "is_superuser": true,
+  "first_name": "ivans",
+  "last_name": "del pino",
+  "email": "ivans53@gmail.com",
+  "address": "",
+  "is_active": true,
+  "is_staff": true,
+  "area": "Programación",
+  "level": "Estudiante",
+  "groups": [],
+  "user_permissions": []
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/users/7/
+Content-Type: application/json
+
+{
+  "password": "123456",
+  "last_login": null,
+  "is_superuser": true,
+  "first_name": "ivans",
+  "last_name": "del pino",
+  "email": "ivans53@gmail.com",
+  "address": "",
+  "is_active": true,
+  "is_staff": true,
+  "area": "Programación",
+  "level": "Profesional",
+  "groups": [],
+  "user_permissions": []
+}
+
+###
